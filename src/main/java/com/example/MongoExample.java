@@ -23,7 +23,7 @@ public class MongoExample {
         // print existing databases
         client.listDatabaseNames().into(new ArrayList<>()).forEach(System.out::println);
 
-        //database.createCollection("customers", new CreateCollectionOptions());
+        database.createCollection("customers", new CreateCollectionOptions());
 
         System.out.println("*******Collection************");
         // print all collections in customers database
@@ -39,7 +39,7 @@ public class MongoExample {
                 .append("stars", 3)
                 .append("categories", Arrays.asList("Bakery", "Coffee", "Pastries"));
 
-        //collection.insertOne(document);
+        collection.insertOne(document);
 
         Block<Document> printBlock = new Block<Document>() {
             @Override
