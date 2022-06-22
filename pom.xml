@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <mongo.version>3.12.1</mongo.version>
+        <mongo.version>3.12.8</mongo.version>
         <flapdoodle.version>1.11</flapdoodle.version>
         <morphia.version>1.5.3</morphia.version>
     </properties>
